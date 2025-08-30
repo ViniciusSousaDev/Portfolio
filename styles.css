@@ -198,6 +198,7 @@ h1{
     color: var(--claro);
     border: 1px solid var(--vidro);
     outline: none;
+    resize: vertical;
 }
 
 .campo-form:focus{
