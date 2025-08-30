@@ -6,7 +6,7 @@ Bem-vindo ao meu portfólio pessoal! Este repositório contém o site HTML que a
 
 Sou **Vinicius Sousa**, desenvolvedor Front End, fascinado por tecnologia desde criança. Este portfólio foi criado para demonstrar minhas habilidades em desenvolvimento web, design responsivo e interatividade básica.
 
-O site já está hospedado e pode ser acessado online [clicando aqui]([https://viniciussoaresdesous1756593499097.0531865.meusitehostgator.com.br).
+O site já está hospedado e pode ser acessado online [clicando aqui](https://viniciussoaresdesous1756593499097.0531865.meusitehostgator.com.br).
 
 ## Tecnologias Utilizadas
 
