@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Sousa | Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="particulas">
+
+    </div>
+
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link"">Início</a>
+            </li>
+            <li>
+                <a href=" #sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./img/vinicius.jpg" alt="Foto de Vinicius Sousa" class="foto-perfil">
+        <h1>Vinicius Sousa</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Desde criança, sempre fui fascinado por tecnologia e pelo processo de entender como as coisas funcionam.
+                Esse interesse me levou a cursar Ciência da Computação.
+            </p>
+        </div>
+    </section>
+    <selection id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="./img/projeto1.png" alt="Projeto 1" class="projeto-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Loja de Carros</h3>
+                    <p class="paragrafo-projetos">Loja virtual moderna com animações suaves e design responsivo para uma
+                        loja de carros de luxo.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/projeto2.png" alt="Projeto 2" class="projeto-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Página de Viagens</h3>
+                    <p class="paragrafo-projetos">Uma página interativa com roteiros de viagem mais cobiçados do mundo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/projeto3.png" alt="Projeto 3" class="projeto-imagem">
+                <div class="caixa-textos-projetos"></div>
+                <h3 class="info-projetos">Microsoft</h3>
+                <p class="paragrafo-projetos">Página da Microsoft criada para demonstrar conhecimentos em diversas
+                    tecnologias.</p>
+            </div>
+        </div>
+        </div>
+
+        <section id="contatos" class="contatos">
+            <h2 class="contatos-titulo">Entre em Contato</h2>
+            <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event);">
+                <div class="grupo-form">
+                    <input placeholder="Nome" class="campo-form" id="nome">
+                </div>
+                <div class="grupo-form">
+                    <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem"></textarea>
+                </div>
+
+                <button type="submit" class="botao-form">Enviar Whatsapp</button>
+            </form>
+        </section>
+
+        <script>
+            function enviarWhats(event) {
+            event.preventDefault()
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem');
+            const telefone = '5511952153308'
+
+            const texto = `Olá, meu nome é ${nome}. ${mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+            console.log(url)
+
+            window.open(url, '_blank')
+            }
+        </script>
+</body>
+
+</html>
