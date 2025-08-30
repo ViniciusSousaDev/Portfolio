@@ -17,10 +17,10 @@ O site já está hospedado e pode ser acessado online [clicando aqui](URL_DO_SEU
 ## Estrutura do Projeto
 
 /
-├── index.html # Página principal
-├── styles.css # Estilos do site
-├── img/ # Imagens utilizadas (foto de perfil e projetos)
-└── README.md # Este arquivo
+├── index.html   # Página principal
+├── styles.css   # Estilos do site
+├── img/         # Imagens utilizadas (foto de perfil e projetos)
+└── README.md    # Este arquivo
 
 ## Funcionalidades
 
